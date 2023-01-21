@@ -7,13 +7,13 @@ public class PlaceOnTrackedImage : MonoBehaviour
 
     public GameObject arPrefab;
     private Rigidbody rb;
-    private DressMaterials dressMaterials;
+    private ClothingChanger dressMaterials;
 
     private void Awake()
     {
         arPrefab = Instantiate(arPrefab);
         rb = arPrefab.GetComponent<Rigidbody>();
-        dressMaterials = arPrefab.GetComponent<DressMaterials>();
+        dressMaterials = arPrefab.GetComponent<ClothingChanger>();
         arPrefab.name = _trackedImageManager.referenceLibrary[0].name;
         arPrefab.SetActive(false);
     }
@@ -28,19 +28,6 @@ public class PlaceOnTrackedImage : MonoBehaviour
     {
         _trackedImageManager.trackedImagesChanged -= OnTrackedImagesChanged;
     }
-
-/*    private void Update()
-    {
-        for (int i = 0; i < Input.touchCount; ++i)
-        {
-            if (Input.GetTouch(i).phase == TouchPhase.Began)
-            {
-                // Change clothes
-                dressMaterials.ChangeCloth();
-            }
-        }
-    }*/
-
 
     private void OnTrackedImagesChanged(ARTrackedImagesChangedEventArgs eventArgs)
     { 
