@@ -42,8 +42,7 @@ public class PlaceOnTrackedImage : MonoBehaviour
         // foreach currently tracked image, set their 
         foreach (var trackedImage in eventArgs.updated)
         {
-            rb.MovePosition(trackedImage.transform.position);
-            rb.MoveRotation(trackedImage.transform.rotation);
+            rb.Move(trackedImage.transform.position, trackedImage.transform.rotation);
             arPrefab.SetActive(trackedImage.trackingState == TrackingState.Tracking);
         }
 

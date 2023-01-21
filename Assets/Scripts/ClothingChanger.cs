@@ -23,7 +23,7 @@ public class ClothingChanger : MonoBehaviour
     {
         if (currentClothing == newClothing) return;
 
-        if (currentClothing)
+        if (currentClothing != null)
             currentClothing.SetActive(false);
 
         currentClothing = newClothing;

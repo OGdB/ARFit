@@ -226,7 +226,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 578315661}
-  - component: {fileID: 578315660}
   - component: {fileID: 578315662}
   m_Layer: 0
   m_Name: AR Controller
@@ -235,21 +234,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &578315660
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 578315659}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3afbc5a1ae6b94f47bd7066ed85659a1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  myObject: {fileID: 5287550904319117217, guid: 5dac12dd3fe3a544e8a850a3fe286f1f,
-    type: 3}
-  raycastManager: {fileID: 1659859600}
 --- !u!4 &578315661
 Transform:
   m_ObjectHideFlags: 0
