@@ -4,7 +4,7 @@ public class ClothingChanger : MonoBehaviour
 {
     public static ClothingChanger Singleton;
 
-    private GameObject currentClothing;
+    public GameObject currentClothing;
 
 
     private void Awake()
